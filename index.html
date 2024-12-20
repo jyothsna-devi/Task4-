@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="display" disabled />
+    <div class="buttons">
+      <button class="button" onclick="appendNumber(7)">7</button>
+      <button class="button" onclick="appendNumber(8)">8</button>
+      <button class="button" onclick="appendNumber(9)">9</button>
+      <button class="button" onclick="clearDisplay()">C</button>
+      
+      <button class="button" onclick="appendNumber(4)">4</button>
+      <button class="button" onclick="appendNumber(5)">5</button>
+      <button class="button" onclick="appendNumber(6)">6</button>
+      <button class="button" onclick="appendOperation('+')">+</button>
+      
+      <button class="button" onclick="appendNumber(1)">1</button>
+      <button class="button" onclick="appendNumber(2)">2</button>
+      <button class="button" onclick="appendNumber(3)">3</button>
+      <button class="button" onclick="appendOperation('-')">-</button>
+      
+      <button class="button" onclick="appendNumber(0)">0</button>
+      <button class="button" onclick="appendDecimal()">.</button>
+      <button class="button" onclick="appendOperation('*')">*</button>
+      <button class="button" onclick="appendOperation('/')">/</button>
+      
+      <button class="button" onclick="calculateSquare()">x²</button>
+      <button class="button" onclick="calculateSquareRoot()">√</button>
+      <button class="button" onclick="calculatePercentage()">%</button>
+      <button class="button" onclick="calculateResult()">=</button>
+      
+      <!-- Extra Arithmetic Operations -->
+      <button class="button" onclick="calculatePower()">xⁿ</button>
+      <button class="button" onclick="calculateReciprocal()">1/x</button>
+      <button class="button" onclick="calculateFactorial()">n!</button>
+      <button class="button" onclick="calculateLogarithm()">log₁₀</button>
+      
+      <button class="button" onclick="calculateSin()">sin</button>
+      <button class="button" onclick="calculateCos()">cos</button>
+      <button class="button" onclick="calculateTan()">tan</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
